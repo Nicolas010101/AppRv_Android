@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_liste_rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+    <!--android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"-->
+    <!--  -->
+
+
+    <QuickContactBadge
+        android:id="@+id/quickContactBadge3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/videSpaceVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    "/>
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimaryDark2.0"
+        android:textSize="30sp"
+        android:text="    "/>
+
+
+    <TextView
+        android:id="@+id/videSpaceVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    "/>
+
+    <TextView
+        android:id="@+id/visiteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:text="Visiteur : "/>
+
+    <TextView
+        android:id="@+id/visiteurDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="    "/>
+
+    <TextView
+        android:id="@+id/videSpaceVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    "/>
+
+    <TextView
+        android:id="@+id/praticien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:text="Praticien : "/>
+
+    <TextView
+        android:id="@+id/praticienDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="    "/>
+
+    <TextView
+        android:id="@+id/videSpaceVertical3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    "/>
+
+    <TextView
+        android:id="@+id/bilan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:text="Bilan : "/>
+
+    <TextView
+        android:id="@+id/bilanDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="    "/>
+
+
+    <TextView
+        android:id="@+id/videSpaceVertical4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    "/>
+
+    <TextView
+        android:id="@+id/motif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:text="Motif : "/>
+
+    <TextView
+        android:id="@+id/motifDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="    "/>
+
+    <TextView
+        android:id="@+id/videSpaceVertical5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    "/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/coefConf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:text="Coefficient de confiance : "/>
+
+
+        <TextView
+            android:id="@+id/videSpaceHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    "/>
+
+        <TextView
+            android:id="@+id/coefConfDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="    "/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/videSpaceVertical6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    "/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/colorWhite"
+        android:onClick="voirEchantillon"
+        android:text="@string/btnVisuEchant"/>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_saisie_rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+    <!--android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"-->
+    <!--  -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <QuickContactBadge
+                android:id="@+id/quickContactBadge3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/videSpaceVertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    " />
+
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Saisie du rapport"
+                android:textColor="@color/colorPrimaryDark2.0"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/videSpaceVertical1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    " />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date de la visite : "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDateSelection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  "
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/videSpaceVertical2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    " />
+
+            <Button
+                android:layout_width="500px"
+                android:layout_height="65px"
+                android:layout_gravity="center"
+                android:background="@drawable/mybutton3"
+                android:onClick="selectionnerDate"
+                android:text="@string/btnDateCommande"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/videSpaceVertical2bis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    " />
+
+            <TextView
+                android:id="@+id/praticien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Praticien : "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spPraticien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+
+            <TextView
+                android:id="@+id/videSpaceVertical3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    " />
+
+
+            <TextView
+                android:id="@+id/motif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motif : "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spMotif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+
+
+            <TextView
+                android:id="@+id/videSpaceVertical4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    " />
+
+            <TextView
+                android:id="@+id/bilan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bilan : "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etBilan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:inputType="text|textMultiLine"/>
+
+
+            <TextView
+                android:id="@+id/videSpaceVertical5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    " />
+
+            <TextView
+                android:id="@+id/coefConf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coefficient de confiance : "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/spCoefConf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+
+
+            <TextView
+                android:id="@+id/videSpaceVertical6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    " />
+
+            <TextView
+                android:id="@+id/echantillonsIsSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent2"
+                android:text="@string/tvEchantSelect" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="105px"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/mybutton3"
+                android:onClick="selectionnerEchant"
+                android:text="@string/btnEchantSelect"/>
+
+
+            <TextView
+                android:id="@+id/videSpaceVertical7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    " />
+
+            <TextView
+                android:id="@+id/echantillonsSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent2"
+                android:text="Passez voir les échantillons" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/videSpaceHorizontal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   " />
+
+                <Button
+                    android:id="@+id/btnValider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:onClick="valider"
+                    android:text="@string/btnValider"
+                    android:textColor="@color/colorWhite"
+                    />
+                <!--android:onClick=""-->
+
+                <TextView
+                    android:id="@+id/videSpaceHorizontal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  " />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:onClick="annuler"
+                    android:text="@string/btnAnnuler"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

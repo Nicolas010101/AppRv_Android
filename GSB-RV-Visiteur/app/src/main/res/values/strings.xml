@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GSB-RV-Visiteur</string>
+    <string name="lblMatricule">Matricule : </string>
+    <string name="lblMdp">Mot de passe : </string>
+    <string name="btnValider"> Valider </string>
+    <string name="btnAnnuler"> Annuler </string>
+    <string name="btnConsultRv"> CONSULTER UN RAPPORT DE VISITE </string>
+    <string name="btnSaisirRv"> SAISIR UN RAPPORT DE VISITE </string>
+    <string name="btnAfficher"> AFFICHER </string>
+    <string name="btnVisuEchant"> VOIR LES ECHANTILLONS OFFERTS </string>
+    <string name="btnDateCommande"> Sélectionner la date  </string>
+    <string name="tvEchantSelect"> Vous n\'avez pas encore séléctionné d\'échantillon ! </string>
+    <string name="btnEchantSelect"> Ajouter les échantillons offerts </string>
+    <string name="enregistrer"> Enregistrer </string>
+    <string name="title_activity_menu_rv">menuRvActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
